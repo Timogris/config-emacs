@@ -1,7 +1,7 @@
 #+TITLE: Emacs Configuration File
 #+AUTHOR: Timothée Gris
 
-/Note : to link =.emacs= to =configuration.org=, use the following./
+/Note : to link =init.el= to =configuration.org=, use the following./
 
 #+BEGIN_SRC emacs-lisp
 ;;(org-babel-load-file "~/.emacs.d/configuration.org")

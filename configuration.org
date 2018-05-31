@@ -1,7 +1,7 @@
 #+TITLE: Emacs Configuration File
 #+AUTHOR: Timothée Gris
 
-/Note : to link =init.el= to =configuration.org=, use the following./
+/Note : to link =init.el= to =configuration.org=, use the following :/
 
 #+BEGIN_SRC emacs-lisp
 ;;(org-babel-load-file "~/.emacs.d/configuration.org")
@@ -23,11 +23,11 @@
     (package-refresh-contents))
 #+END_SRC
 
-* =vim=-like
+* Vim-like
 
 ** =evil-mode=
 
-   =evil-mode= for Emacs
+   Vim keybindings and integration in Emacs.
    
 #+BEGIN_SRC emacs-lisp
 (require 'evil)
@@ -36,7 +36,7 @@
 
 ** =powerline=
 
-   =powerline= for Emacs
+   =powerline= from Vim for Emacs.
   
 #+BEGIN_SRC emacs-lisp
 (require 'powerline)
@@ -44,7 +44,7 @@
 
 ** =powerline= theme
 
-   Change the =powerline= theme
+   Applies the default =powerline= theme.
 
 #+BEGIN_SRC emacs-lisp
 (powerline-default-theme)
@@ -52,9 +52,9 @@
 
 * UI preferences
 
-** Notification bell 
+** Notification flash
 
-   Set visual flash instead of a notification beep
+   Sets a visual on-screen flash instead of a notification beep.
    
 #+BEGIN_SRC emacs-lisp
 (setq visible-bell 1)
@@ -62,7 +62,7 @@
    
 ** Enable =visual-line-mode=
 
-   Word wrap at the end of a line 
+   Words wrap at the end of a line.
    
 #+BEGIN_SRC emacs-lisp
 (global-visual-line-mode 1)
@@ -70,7 +70,7 @@
 
 ** Enable =linum-mode=
 
-   Display line number on the left
+   Displays the line number on the left.
 
 #+BEGIN_SRC emacs-lisp
 (global-linum-mode t)
@@ -78,34 +78,34 @@
 
 ** Enable =minimap-mode=
 
-   Enable a minimap on the right of the screen, /sublime-like/.
+   Displays a minimap on the right of the screen, /sublime-like/.
 
 #+BEGIN_SRC emacs-lisp
-;;(minimap-mode 1)
-;;
+(minimap-mode 1)
+
 ;; Move it to the right.
 
-;;(setq minimap-window-location 'right)
+(setq minimap-window-location 'right)
 
 ;; Make it work with HTML and Org.
 
-;;(add-to-list 'minimap-major-modes 'org-mode)
-;;(add-to-list 'minimap-major-modes 'html-mode)
+(add-to-list 'minimap-major-modes 'org-mode)
+(add-to-list 'minimap-major-modes 'html-mode)
 
-;; Change background color from old, distracting red to new, refreshing D3D3D3
+;;Change background color from old, distracting red to new, refreshing D3D3D3
 
-;;(custom-set-faces
-;;  '(minimap-active-region-background
-;;    ((((background dark)) (:background "#2A2A2A222222"))
-;;      (t (:background "#D3D3D3222222")))
+(custom-set-faces
+  '(minimap-active-region-background
+    ((((background dark)) (:background "#2A2A2A222222"))
+      (t (:background "#D3D3D3222222")))
 ;;    "Face for the active region in the minimap.
 ;;By default, this is only a different background color."
-;;    :group 'minimap))
+    :group 'minimap))
 #+END_SRC
 
 ** Better window splitting
 
-   Splits the window with the "next" buffer instead of the current buffer
+   Splits the window with the "next" buffer instead of the current buffer.
 
 #+BEGIN_SRC emacs-lisp
 (defun vsplit-last-buffer ()
@@ -124,9 +124,11 @@
 (global-set-key (kbd "C-x 2") 'vsplit-last-buffer)
 (global-set-key (kbd "C-x 3") 'hsplit-last-buffer)
 #+END_SRC
-** Fullscreen on startup
-   Emacs runs fullscreen when started.
 
+** Fullscreen on startup
+
+   Emacs runs fullscreen when started.
+   
 #+BEGIN_SRC emacs-lisp
 (defun fullscreen ()
        (interactive)
@@ -134,7 +136,7 @@
                  '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
 
 ;; comment line below to disable		 
-;;(fullscreen)
+(fullscreen)
 #+END_SRC
 
 * UX preferences
@@ -151,7 +153,7 @@
   
 ** =org-bullets=
    
-   Better bullets instead of '*'
+   Better bullets instead of '*'.
 
 #+BEGIN_SRC emacs-lisp
 (require 'org-bullets)
@@ -162,7 +164,7 @@
    
 *** =ox-beamer=
     
-    Make presentations in LaTeX
+    Export presentations in LaTeX !
 
 #+BEGIN_SRC emacs-lisp
 (require 'ox-beamer)
@@ -178,7 +180,7 @@
 
 *** =ox-twbs=
 
-    Convert into HTML (TWBS)
+    Convert into HTML (TWBS).
 
 #+BEGIN_SRC emacs-lisp
 (require 'ox-beamer)
@@ -186,24 +188,25 @@
 
 ** =TODO= items states
    
-   More choice for TODO items advencement
+   More choices for TODO items advencement.
 
 #+BEGIN_SRC emacs-lisp
 (setq org-todo-keywords
   '((sequence "TODO(t)" "RDV(r)" "WAIT(w@/!)" "|" "DONE(d!)" "CANCELED(c@)")))
 #+END_SRC
 
-** Syntax color in source code blocks
+** Syntax coloring in source code blocks
 
-
-   Prettify code in source code blocks in =org-mode=.
+   Prettify source code blocks in =org-mode=.
 
 #+BEGIN_SRC emacs-lisp
 (setq org-src-fontify-natively t)
 #+END_SRC
    
 * Auto completion stuff
+
 ** =flycheck=
+
    Syntax checking on the fly.
 
 #+begin_src emacs-lisp
@@ -227,14 +230,14 @@
 
 *** =irony-mode=
 
-   Initialize =company-irony=
+   Initializes =company-irony=.
 
 #+BEGIN_SRC emacs-lisp
 (eval-after-load 'company
   '(add-to-list 'company-backends 'company-irony))
 #+END_SRC
 
-   C++ auto-completion
+   C++ auto-completion.
 
 #+BEGIN_SRC emacs-lisp
 (add-hook 'c++-mode-hook 'irony-mode)
@@ -245,7 +248,9 @@
 #+END_SRC
    
 ** Python
+
 *** =elpy=
+
    Here, we use Elpy : 
 - Automatic indentation
 - Syntax Highlighting
@@ -260,16 +265,18 @@
       python-shell-interpreter-args "-i --simple-prompt")
 #+end_src
 
-*** =auto-pep8=
+*** =py-autopep8=
 
-  and =py-autopep8= for Python standards.
+  and =py-autopep8= for Python standards (modifies whitespaces and indentations upon saving to follow those standards).
 
 #+begin_src emacs-lisp
 (require 'py-autopep8)
 (add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 #+end_src
+
 * =tabbar-mode=
-  Tabs in Emacs.
+
+  Tabs in Emacs, with Atom One Dark colors, but works for Dracula, too.
 
 #+BEGIN_SRC emacs-lisp
 
@@ -317,8 +324,8 @@
  :underline nil
  :box '(:line-width 5 :color "#282c34" :style nil))
 
-;; Change padding of the tabs
-;; we also need to set separator to avoid overlapping tabs by highlighted tabs
+;; Changes padding of the tabs
+;; we also need to set separators to avoid overlapping tabs by highlighted tabs
 (custom-set-variables
  '(tabbar-separator (quote (0.5))))
 ;; adding spaces
@@ -342,6 +349,7 @@ That is, a string used to represent it on the tab bar."
 (tabbar-mode 1)
 
 #+END_SRC
+
 * Keybindings
   
 ** =org-agenda=
@@ -359,6 +367,7 @@ That is, a string used to represent it on the tab bar."
 #+END_SRC
    
 ** =tabbar-mode=
+
    Navigate between tabs and groups.
 
 #+BEGIN_SRC emacs-lisp

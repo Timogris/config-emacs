@@ -25,26 +25,26 @@
 
 (global-linum-mode t)
 
-;;(minimap-mode 1)
-;;
+(minimap-mode 1)
+
 ;; Move it to the right.
 
-;;(setq minimap-window-location 'right)
+(setq minimap-window-location 'right)
 
 ;; Make it work with HTML and Org.
 
-;;(add-to-list 'minimap-major-modes 'org-mode)
-;;(add-to-list 'minimap-major-modes 'html-mode)
+(add-to-list 'minimap-major-modes 'org-mode)
+(add-to-list 'minimap-major-modes 'html-mode)
 
-;; Change background color from old, distracting red to new, refreshing D3D3D3
+;;Change background color from old, distracting red to new, refreshing D3D3D3
 
-;;(custom-set-faces
-;;  '(minimap-active-region-background
-;;    ((((background dark)) (:background "#2A2A2A222222"))
-;;      (t (:background "#D3D3D3222222")))
+(custom-set-faces
+  '(minimap-active-region-background
+    ((((background dark)) (:background "#2A2A2A222222"))
+      (t (:background "#D3D3D3222222")))
 ;;    "Face for the active region in the minimap.
 ;;By default, this is only a different background color."
-;;    :group 'minimap))
+    :group 'minimap))
 
 (defun vsplit-last-buffer ()
   (interactive)
@@ -68,7 +68,7 @@
                  '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
 
 ;; comment line below to disable		 
-;;(fullscreen)
+(fullscreen)
 
 (server-start)
 

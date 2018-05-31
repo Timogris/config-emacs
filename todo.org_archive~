@@ -1,0 +1,544 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /home/timo/.emacs.d/todo.org
+
+
+* DONE presentation Lego
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-03-09 ven. 14:10
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_OLPATH: anglais
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :ARCHIVE_ITAGS: travail anglais
+  :END:
+
+** DONE texte								  :t:
+   
+   [[~/Documents/epsi/anglais/Pres/textlego.org][Texte]]
+   [[https://www.pcmag.com/news/350719/lego-unveils-kid-friendly-boost-robotics-set][Lego Boost]]
+   [[https://www.pcmag.com/article2/0,2817,2423200,00.asp][Lego Mindstorm]]
+
+** DONE presentation
+   [[~/Documents/epsi/anglais/Pres/pres.org][Pres - org]]
+   [[~/Documents/epsi/anglais/Pres/pres.pdf][Pres - pdf]]
+
+
+* DONE [#B] anglais					    :travail:anglais:
+  DEADLINE: <2018-03-09 ven.>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-03-09 ven. 14:10
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+** DONE article Apple
+
+   [[file:~/Documents/epsi/anglais/rendu0203.org][Rendu 02/03]]
+
+*** DONE imprimer rendu
+   
+
+* DONE [#B] anglais					    :travail:anglais:
+  DEADLINE: <2018-03-09 ven.>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-03-11 dim. 15:31
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+** DONE article Apple
+
+   [[file:~/Documents/epsi/anglais/rendu0203.org][Rendu 02/03]]
+
+*** TODO imprimer rendu
+   
+** TODO presentation Lego
+
+*** DONE texte							  :t:
+    
+**** IMPRIMERRRRRRR
+
+    [[~/Documents/epsi/anglais/Pres/textlego.org][Texte]]
+    [[https://www.pcmag.com/news/350719/lego-unveils-kid-friendly-boost-robotics-set][Lego Boost]]
+    [[https://www.pcmag.com/article2/0,2817,2423200,00.asp][Lego Mindstorm]]
+
+*** TODO presentation
+    [[~/Documents/epsi/anglais/Pres/pres.org][Pres - org]]
+    [[~/Documents/epsi/anglais/Pres/pres.pdf][Pres - pdf]]
+
+
+* DONE [#C] droit					      :travail:droit:
+  SCHEDULED: <2018-03-12 lun.>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-03-11 dim. 21:50
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+** DONE rendu (cf. notes pour le sujet)
+
+   [[~/Documents/epsi/droit/rendu1203.org][Rendu 12/03]]
+
+
+* DONE taper cours de droit			       :travail:maison:maths:
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-03-13 mar. 00:36
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE sortir poubelle					     :maison:parents:
+  DEADLINE: <2018-03-12 lun. 20:00>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-03-13 mar. 00:36
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE checker lave vaisselle				     :maison:parents:
+  SCHEDULED: <2018-03-12 lun. 20:00>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-03-13 mar. 00:36
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+
+* DONE [#A] c++						  :travail:cpp:rendu:
+  DEADLINE: <2018-03-09 ven.>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-03-13 mar. 15:34
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+  Jeu du pendu
+  [[~/Documents/epsi/c%2B%2B/pendu/][Pendu dir]]
+  
+
+* DONE [#A] uml						     :travail:uml:ds:
+  SCHEDULED: <2018-03-15 jeu.>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-03-14 mer. 19:22
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+  DS SUR TOUT
+  [[~/Documents/epsi/uml][uml dir]]
+
+
+* DONE ajouter couleurs lisp pour config		     :prod:emacs:org:
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-03-18 dim. 12:36
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+  
+
+
+* DONE prendre plat 
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-03-19 lun. 09:00
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+  
+
+
+* DONE site WS2							 :travail:ws:
+  DEADLINE: <2018-03-22 jeu. 18:00>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-03-25 dim. 21:32
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+** TODO Accueil
+** DONE recherche
+** TODO profil
+** DONE login
+** DONE register
+** DONE logout
+** DONE portfolio
+
+  [[~/Documents/epsi/WS2/site][site dir]]
+
+
+
+* DONE [#B] maths					      :travail:maths:
+  SCHEDULED: <2018-03-26 lun.>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-03-30 ven. 12:51
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+** TODO DS Logique					   :travail:maths:ds:
+
+  [[file:~/Documents/epsi/maths/Logique][Logique]]
+
+  
+
+* DONE trouver nouveau theme emacs			       :emacs:config:
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-04-11 mer. 20:15
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE Ranger salle de jeux					     :maison:
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-04-11 mer. 20:51
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE Nettoyer chambre						     :maison:
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-04-11 mer. 20:52
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE changer =evil-tabs= pour =tabbar-mode=		       :emacs:config:
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-04-11 mer. 22:43
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE ajouter les modes TODO				       :emacs:config:
+  - State "DONE"       from "TODO"       [2018-04-11 mer. 23:15]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-04-11 mer. 23:15
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+
+* DONE Mode veille quand verrouille
+  - State "DONE"       from ""           [2018-05-08 mar. 23:43]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-08 mar. 23:43
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Scripte i3lock-color
+  - State "DONE"       from ""           [2018-05-08 mar. 23:43]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-08 mar. 23:43
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE [#B] com							:travail:com:
+  SCHEDULED: <2018-05-14 lun.>
+  - State "DONE"       from "WAIT"       [2018-05-14 lun. 08:41]
+  - State "WAIT"       from "TODO"       [2018-04-15 dim. 23:40] \\
+    Présentation finie, attendre date de passage
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-14 lun. 08:41
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+** TODO presentation paradoxe fermi			   :travail:com:pres:
+
+    [[https://waitbutwhy.com/2014/05/fermi-paradox.html][waitbutwhy - Fermi Paradox]]
+    [[https://www.youtube.com/watch?v%3DsNhhvQGsMEc][Kurzgesagt - Fermi Paradox (1/2)]]
+    [[https://www.youtube.com/watch?v%3D1fQkVqno-uI][Kurzgesagt - Fermi Paradox (2/2)]]
+
+    [[~/Documents/epsi/com/pres/texte.org][Texte presentation]]
+    [[~/Documents/epsi/com/pres/notes.org][Notes]]
+    [[~/Documents/epsi/com/pres/diapo.org][Diapo]]
+
+** TODO DS synthèse					     :travail:com:ds:
+   SCHEDULED: <2018-05-14 lun.>
+
+  
+
+* DONE fish aliases
+  - State "DONE"       from "TODO"       [2018-05-14 lun. 21:03]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-14 lun. 21:03
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+
+* DONE La circulation routiere : Les intersections 
+  SCHEDULED: <2018-05-14 lun.>
+  - State "DONE"       from "TODO"       [2018-05-14 lun. 20:03]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-14 lun. 20:03
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+  
+
+* CANCELED faire changer le verre de la montre
+  - State "CANCELED"   from "TODO"       [2018-05-15 mar. 16:18] \\
+    41 euros pour le meme "verre"
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-15 mar. 16:18
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: CANCELED
+  :END:
+
+
+
+* DONE La circulation routiere : La circulation 
+  SCHEDULED: <2018-05-15 mar.>
+  - State "DONE"       from "TODO"       [2018-05-15 mar. 22:30]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-15 mar. 22:30
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Python : Instructions repetitives
+  SCHEDULED: <2018-05-15 mar.>
+  - State "DONE"       from "TODO"       [2018-05-16 mer. 00:06]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-16 mer. 00:06
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+
+* DONE Retrouver Julie pour aller a Emmaus
+  SCHEDULED: <2018-05-15 mar. 14:00>
+  - State "DONE"       from "TODO"       [2018-05-16 mer. 00:13]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-16 mer. 00:13
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Python : faire exos 4.5 a 4.9 p.33		  :perso:code:python:
+  SCHEDULED: <2018-05-16 mer.>
+  - State "DONE"       from "TODO"       [2018-05-16 mer. 16:56]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-16 mer. 16:56
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+ 
+
+* DONE La circulation routiere : croiser et depasser		:perso:route:
+  SCHEDULED: <2018-05-16 mer.>
+  - State "DONE"       from "TODO"       [2018-05-16 mer. 22:23]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-16 mer. 22:23
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+  
+
+* DONE 20 pages Nothomb						  :perso:lit:
+  SCHEDULED: <2018-05-16 mer.>
+  - State "DONE"       from "TODO"       [2018-05-16 mer. 22:23]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-16 mer. 22:24
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+ 
+
+
+* DONE Appeler Christian convention stage		  :travail:stage:tel:
+  SCHEDULED: <2018-05-17 jeu.>
+  - State "DONE"       from "TODO"       [2018-05-18 ven. 10:34]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-18 ven. 10:34
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+
+* DONE Gouter Julie w/ ses grands parents		       :perso:sortie:
+  SCHEDULED: <2018-05-17 jeu. 16:00>
+  - State "DONE"       from "RDV"        [2018-05-18 ven. 10:37]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-18 ven. 10:37
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+  
+
+* DONE Soiree classe EPSI				  :perso:epsi:sortie:
+  SCHEDULED: <2018-05-17 jeu. 20:30>
+  - State "DONE"       from "RDV"        [2018-05-18 ven. 10:37]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-18 ven. 10:37
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+  
+  
+
+* DONE Prendre rdv coiffeur					  :perso:tel:
+  SCHEDULED: <2018-05-19 sam.>
+  - State "DONE"       from "TODO"       [2018-05-19 sam. 12:25]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-19 sam. 12:25
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+ 
+
+* DONE [#A] Remplir convention de stage			      :travail:stage:
+  SCHEDULED: <2018-05-19 sam.>
+  - State "DONE"       from "TODO"       [2018-05-21 lun. 11:42]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-21 lun. 11:42
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+* DONE Coiffeur Daniel C.				 :perso:rdv:coiffeur:
+  SCHEDULED: <2018-05-22 mar. 09:00>
+  - State "DONE"       from "RDV"        [2018-05-23 mer. 09:59]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-23 mer. 09:59
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+  40 rue Sala, Lyon 2
+
+  
+
+* CANCELED retrouver juju hotel					   :rdv:juju:
+  SCHEDULED: <2018-05-23 mer. 16:30>
+  - State "CANCELED"   from "RDV"        [2018-05-23 mer. 15:47] \\
+    C'est le deluge, on va plutot rentrer chez moi tranquillement
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-23 mer. 15:48
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: CANCELED
+  :END:
+
+
+* DONE Regler boutons volume					 :perso:arch:
+  - State "DONE"       from "TODO"       [2018-05-23 mer. 16:17]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-23 mer. 16:18
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+* DONE [#A] Renvoyer mail avec infos necessaires stage	      :travail:stage:
+  SCHEDULED: <2018-05-19 sam.>
+  - State "DONE"       from "TODO"       [2018-05-24 jeu. 21:05]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-24 jeu. 21:05
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+  
+
+
+* DONE [#B] Finir [[~/Documents/epsi/c%2B%2B/TP_Pokemon/Pokemon/Main.cpp][Main.cpp]]					:travail:cpp:
+  SCHEDULED: <2018-05-20 dim.>
+  - State "DONE"       from "TODO"       [2018-05-26 sam. 17:19]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-26 sam. 17:19
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+ 
+** TODO Pour timo : n'oublie pas de commit & push
+   SCHEDULED: <2018-05-24 jeu. 17:00>
+
+
+* DONE Val et camille demenagement				  :rdv:manaa:
+  SCHEDULED: <2018-05-26 sam.>
+  - State "DONE"       from "RDV"        [2018-05-28 lun. 10:06]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-28 lun. 10:06
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+ 
+   
+
+* DONE 20 Pages Nothomb (p.27)					  :perso:lit:
+  SCHEDULED: <2018-05-19 sam.>
+  - State "DONE"       from "TODO"       [2018-05-30 mer. 08:56]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-30 mer. 08:56
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+   
+
+
+* DONE Transmettre validation convention de stage	      :travail:stage:
+  - State "DONE"       from "TODO"       [2018-05-30 mer. 08:57]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-05-30 mer. 08:57
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+  
+ 

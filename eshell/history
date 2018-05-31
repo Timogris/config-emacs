@@ -1,0 +1,79 @@
+ls
+ls
+ls
+make Main.cpp 
+g++ Main.cpp 
+g++ Pokemon.cpp 
+fish
+cpp
+cd Documents/epsi/c++/TP_Pokemon/Pokemon
+ls
+g++ Main.cpp
+cd
+ls
+cd Downloads
+ls
+sudo mv menlo.ttf /usr/share/fonts
+cd .emacs.d
+cd
+cd .emacs.d/
+;s
+l
+ls
+mv init.el init-nuit.el
+ls
+sh nuit.sh 
+sh jour.sh 
+ls
+cd ..
+ls
+mkdir i3scrot
+ls
+mv i3scrot.sh i3scrot/
+ls
+rm i3lock_bar.sh 
+rm i3lock_bar_veille.sh 
+rm i3scrot_veille.sh 
+mv veille.sh i3scrot/
+cd i3scrot/
+ls
+cd ~/.config/i3status/
+ls
+vim config 
+cd ..
+ls
+cd ProjetCPP/
+ls
+rm Main.cpp 
+ls
+rm ../Pokemon/Pokemon.cpp 
+cp Pokemon.cpp ../Pokemon/
+rm ../Pokemon/Pokemon.h 
+cp Pokemon.h ../Pokemon/
+ls
+git add README.md 
+git commit -m "Update on info about the project"
+git push -u origin master
+git add 
+git add Main.cpp 
+git commit -m "test"
+git push -a origin timo
+git push -u origin timo
+git branch timo
+git add Main.cpp 
+git commit -m "test"
+git push
+git add Main.cpp 
+git commit
+git commit -m "test"
+git push -u origin master
+git branch timo
+git checkout timo
+git add Main.cpp 
+git add Main.cpp 
+git commit -m "test"
+git push
+git push -u origin timo
+git add Main.cpp 
+git commit -m "Test fin"
+git push -u origin timo

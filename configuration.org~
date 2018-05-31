@@ -1,0 +1,370 @@
+#+TITLE: Emacs Configuration File
+#+AUTHOR: Timothée Gris
+
+/Note : to link =.emacs= to =configuration.org=, use the following./
+
+#+BEGIN_SRC emacs-lisp
+;;(org-babel-load-file "~/.emacs.d/configuration.org")
+#+END_SRC
+
+* Packages initialization
+
+#+BEGIN_SRC emacs-lisp
+(package-initialize)
+
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
+;;(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+(package-initialize)
+
+;; Update packages
+(when (not package-archive-contents)
+    (package-refresh-contents))
+#+END_SRC
+
+* =vim=-like
+
+** =evil-mode=
+
+   =evil-mode= for Emacs
+   
+#+BEGIN_SRC emacs-lisp
+(require 'evil)
+(evil-mode 1)
+#+END_SRC
+
+** =powerline=
+
+   =powerline= for Emacs
+  
+#+BEGIN_SRC emacs-lisp
+(require 'powerline)
+#+END_SRC
+
+** =powerline= theme
+
+   Change the =powerline= theme
+
+#+BEGIN_SRC emacs-lisp
+(powerline-default-theme)
+#+END_SRC
+
+* UI preferences
+
+** Notification bell 
+
+   Set visual flash instead of a notification beep
+   
+#+BEGIN_SRC emacs-lisp
+(setq visible-bell 1)
+#+END_SRC
+   
+** Enable =visual-line-mode=
+
+   Word wrap at the end of a line 
+   
+#+BEGIN_SRC emacs-lisp
+(global-visual-line-mode 1)
+#+END_SRC
+
+** Enable =linum-mode=
+
+   Display line number on the left
+
+#+BEGIN_SRC emacs-lisp
+(global-linum-mode t)
+#+END_SRC
+
+** Enable =minimap-mode=
+
+   Enable a minimap on the right of the screen, /sublime-like/.
+
+#+BEGIN_SRC emacs-lisp
+;;(minimap-mode 1)
+;;
+;; Move it to the right.
+
+;;(setq minimap-window-location 'right)
+
+;; Make it work with HTML and Org.
+
+;;(add-to-list 'minimap-major-modes 'org-mode)
+;;(add-to-list 'minimap-major-modes 'html-mode)
+
+;; Change background color from old, distracting red to new, refreshing D3D3D3
+
+;;(custom-set-faces
+;;  '(minimap-active-region-background
+;;    ((((background dark)) (:background "#2A2A2A222222"))
+;;      (t (:background "#D3D3D3222222")))
+;;    "Face for the active region in the minimap.
+;;By default, this is only a different background color."
+;;    :group 'minimap))
+#+END_SRC
+
+** Better window splitting
+
+   Splits the window with the "next" buffer instead of the current buffer
+
+#+BEGIN_SRC emacs-lisp
+(defun vsplit-last-buffer ()
+  (interactive)
+  (split-window-vertically)
+  (other-window 1 nil)
+  (switch-to-next-buffer)
+  )
+(defun hsplit-last-buffer ()
+  (interactive)
+  (split-window-horizontally)
+  (other-window 1 nil)
+  (switch-to-next-buffer)
+  )
+ 
+(global-set-key (kbd "C-x 2") 'vsplit-last-buffer)
+(global-set-key (kbd "C-x 3") 'hsplit-last-buffer)
+#+END_SRC
+** Fullscreen on startup
+   Emacs runs fullscreen when started.
+
+#+BEGIN_SRC emacs-lisp
+(defun fullscreen ()
+       (interactive)
+       (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
+                 '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
+
+;; comment line below to disable		 
+;;(fullscreen)
+#+END_SRC
+
+* UX preferences
+
+** =server-start=
+
+   Run emacs server on startup.
+
+#+BEGIN_SRC emacs-lisp
+(server-start)
+#+END_SRC
+   
+* =org-mode= config
+  
+** =org-bullets=
+   
+   Better bullets instead of '*'
+
+#+BEGIN_SRC emacs-lisp
+(require 'org-bullets)
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+#+END_SRC
+
+** Export options
+   
+*** =ox-beamer=
+    
+    Make presentations in LaTeX
+
+#+BEGIN_SRC emacs-lisp
+(require 'ox-beamer)
+
+(require 'ox-latex)
+(add-to-list 'org-latex-classes
+             '("beamer"
+               "\\documentclass\[presentation\]\{beamer\}"
+               ("\\section\{%s\}" . "\\section*\{%s\}")
+               ("\\subsection\{%s\}" . "\\subsection*\{%s\}")
+               ("\\subsubsection\{%s\}" . "\\subsubsection*\{%s\}")))
+#+END_SRC
+
+*** =ox-twbs=
+
+    Convert into HTML (TWBS)
+
+#+BEGIN_SRC emacs-lisp
+(require 'ox-beamer)
+#+END_SRC
+
+** =TODO= items states
+   
+   More choice for TODO items advencement
+
+#+BEGIN_SRC emacs-lisp
+(setq org-todo-keywords
+  '((sequence "TODO(t)" "RDV(r)" "WAIT(w@/!)" "|" "DONE(d!)" "CANCELED(c@)")))
+#+END_SRC
+
+** Syntax color in source code blocks
+
+
+   Prettify code in source code blocks in =org-mode=.
+
+#+BEGIN_SRC emacs-lisp
+(setq org-src-fontify-natively t)
+#+END_SRC
+   
+* Auto completion stuff
+** =flycheck=
+   Syntax checking on the fly.
+
+#+begin_src emacs-lisp
+;; always enabled
+(global-flycheck-mode)
+(add-hook 'after-init-hook #'global-flycheck-mode)
+#+end_src
+
+** General =company-mode= config  
+
+   Triggers =company-mode= faster.
+
+#+BEGIN_SRC emacs-lisp
+(global-company-mode 1)
+(setq company-dabbrev-downcase 0)
+(setq company-idle-delay 0)
+(setq company-minimum-prefix-length 2)
+#+END_SRC
+
+** C++
+
+*** =irony-mode=
+
+   Initialize =company-irony=
+
+#+BEGIN_SRC emacs-lisp
+(eval-after-load 'company
+  '(add-to-list 'company-backends 'company-irony))
+#+END_SRC
+
+   C++ auto-completion
+
+#+BEGIN_SRC emacs-lisp
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+(add-hook 'objc-mode-hook 'irony-mode)
+
+(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+#+END_SRC
+   
+** Python
+*** =elpy=
+   Here, we use Elpy : 
+- Automatic indentation
+- Syntax Highlighting
+- Auto-Completion
+- Syntax Checking
+- Python REPL integration
+- etc.
+
+#+begin_src emacs-lisp
+(elpy-enable)
+(setq python-shell-interpreter "ipython"
+      python-shell-interpreter-args "-i --simple-prompt")
+#+end_src
+
+*** =auto-pep8=
+
+  and =py-autopep8= for Python standards.
+
+#+begin_src emacs-lisp
+(require 'py-autopep8)
+(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
+#+end_src
+* =tabbar-mode=
+  Tabs in Emacs.
+
+#+BEGIN_SRC emacs-lisp
+
+;; Tabbar
+(require 'tabbar)
+;; Tabbar settings
+(set-face-attribute
+ 'tabbar-default nil
+ :background "#282c34"
+ :foreground "#282c34"
+ :box '(:line-width 1 :color "#282c34" :style nil))
+(set-face-attribute
+ 'tabbar-unselected nil
+ :background "#5c6370"
+ :foreground "#abb2bf"
+ :box '(:line-width 5 :color "#5c6370" :style nil))
+(set-face-attribute
+ 'tabbar-selected nil
+ :background "#282c34"
+ :foreground "#abb2bf"
+ :box '(:line-width 5 :color "#282c34" :style nil))
+(set-face-attribute
+ 'tabbar-highlight nil
+ :background "#abb2bf"
+ :foreground "#282c34"
+ :underline nil
+ :box '(:line-width 5 :color "#abb2bf" :style nil))
+(set-face-attribute
+ 'tabbar-button nil
+ :box '(:line-width 1 :color "#282c34" :style nil))
+(set-face-attribute
+ 'tabbar-separator nil
+ :background "#282c34"
+ :height 0.6)
+(set-face-attribute
+ 'tabbar-modified nil
+ :background "#5c6370"
+ :foreground "#e06c75"
+ :underline nil
+ :box '(:line-width 5 :color "#5c6370" :style nil))
+(set-face-attribute
+ 'tabbar-selected-modified nil
+ :background "#282c34"
+ :foreground "#e06c75"
+ :underline nil
+ :box '(:line-width 5 :color "#282c34" :style nil))
+
+;; Change padding of the tabs
+;; we also need to set separator to avoid overlapping tabs by highlighted tabs
+(custom-set-variables
+ '(tabbar-separator (quote (0.5))))
+;; adding spaces
+(defun tabbar-buffer-tab-label (tab)
+  "Return a label for TAB.
+That is, a string used to represent it on the tab bar."
+  (let ((label  (if tabbar--buffer-show-groups
+                    (format "[%s]  " (tabbar-tab-tabset tab))
+                  (format "%s  " (tabbar-tab-value tab)))))
+    ;; Unless the tab bar auto scrolls to keep the selected tab
+    ;; visible, shorten the tab label to keep as many tabs as possible
+    ;; in the visible area of the tab bar.
+    (if tabbar-auto-scroll-flag
+        label
+      (tabbar-shorten
+       label (max 1 (/ (window-width)
+                       (length (tabbar-view
+(tabbar-current-tabset)))))))))
+
+;; enable tabbars globally
+(tabbar-mode 1)
+
+#+END_SRC
+* Keybindings
+  
+** =org-agenda=
+
+  Set keybinding for =org-agenda= which were oddly missing
+
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "C-c a") 'org-agenda)
+#+END_SRC
+  
+** Toggle menu bar
+   
+#+BEGIN_SRC emacs-lisp
+(global-set-key [f9] 'toggle-menu-bar-mode-from-frame)
+#+END_SRC
+   
+** =tabbar-mode=
+   Navigate between tabs and groups.
+
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "C-S-p") 'tabbar-backward-group)
+(global-set-key (kbd "C-S-n") 'tabbar-forward-group)
+(global-set-key (kbd "C-z") 'tabbar-backward)
+(global-set-key (kbd "C-x") 'tabbar-forward) ;; tabbar.el, put all the buffers on the tabs.
+#+END_SRC
+   

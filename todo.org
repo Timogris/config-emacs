@@ -1,6 +1,11 @@
 [[/home/timo/Documents/stage/notes.org][Notes rapport de stage]]
 [[/home/timo/Documents/stage/][Stage dir]]
 
+* TODO [#A] Mixtape                                                   :perso:
+  SCHEDULED: <2018-06-02 sam.>
+
+
+  - State "RDV"        from "WAIT"       [2018-06-01 ven. 09:16]
 * TODO regarder [[/home/timo/Vidéos/Keynote-NfngrdLv9ZQ.f135.mp4][Keynote Python - Why is it awesome]]  :perso:code:python:video:
   SCHEDULED: <2018-05-31 jeu. 19:30>
   
@@ -11,10 +16,6 @@
 * TODO Code : Stationner ou s'arreter 				:perso:route:
   SCHEDULED: <2018-05-19 sam.>
    
-* TODO Nothomb (p.79)                                    :perso:lit:
-  SCHEDULED: <2018-05-31 jeu.>
-
-
 * TODO Voir pour un hackintosh				   :perso:hackintosh:
 
 

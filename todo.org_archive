@@ -554,3 +554,16 @@ Archived entries from file /home/timo/.emacs.d/todo.org
    
 
   - State "DONE"       from "TODO"       [2018-05-31 jeu. 13:53]
+
+* DONE Nothomb (p.79)                                             :perso:lit:
+  SCHEDULED: <2018-05-31 jeu.>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-06-01 ven. 09:11
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  Je vais arreter de le mettre dans ma TODO list car c'est un peu redondant.
+  :END:
+
+
+  - State "DONE"       from "TODO"       [2018-06-01 ven. 09:10]

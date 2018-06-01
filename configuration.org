@@ -50,9 +50,7 @@
 (powerline-default-theme)
 #+END_SRC
 
-* UI preferences
-
-** Notification flash
+* Notification flash
 
    Sets a visual on-screen flash instead of a notification beep.
    
@@ -60,6 +58,8 @@
 (setq visible-bell 1)
 #+END_SRC
    
+* Basic Emacs modifications
+  For a better Emacs experience.
 ** Enable =visual-line-mode=
 
    Words wrap at the end of a line.
@@ -136,12 +136,10 @@
                  '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
 
 ;; comment line below to disable		 
-(fullscreen)
+;;(fullscreen)
 #+END_SRC
 
-* UX preferences
-
-** =server-start=
+** Emacs server
 
    Run emacs server on startup.
 

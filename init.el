@@ -117,8 +117,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Fira Mono" :foundry "CTDB" :slant normal :weight normal :height 97 :width normal))))
- '(minimap-active-region-background ((((background dark)) (:background "#2A2A2A222222")) (t (:background "#D3D3D3222222"))) nil :group)
+ '(default ((t (:family "Inconsolata" :foundry "CYRE" :slant normal :weight normal :height 112 :width normal))))
+ '(minimap-active-region-background ((((background dark)) (:background "#2A2A2A222222")) (t (:background "#D3D3D3222222"))) nil (quote minimap))
  '(org-level-1 ((t (:inherit default))))
  '(org-level-2 ((t (:inherit default))))
  '(org-level-3 ((t (:inherit default))))

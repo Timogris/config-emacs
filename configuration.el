@@ -68,7 +68,7 @@
                  '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
 
 ;; comment line below to disable		 
-(fullscreen)
+;;(fullscreen)
 
 (server-start)
 
@@ -161,8 +161,8 @@
  :underline nil
  :box '(:line-width 5 :color "#282c34" :style nil))
 
-;; Change padding of the tabs
-;; we also need to set separator to avoid overlapping tabs by highlighted tabs
+;; Changes padding of the tabs
+;; we also need to set separators to avoid overlapping tabs by highlighted tabs
 (custom-set-variables
  '(tabbar-separator (quote (0.5))))
 ;; adding spaces

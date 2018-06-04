@@ -375,3 +375,10 @@ That is, a string used to represent it on the tab bar."
 (global-set-key (kbd "C->") 'tabbar-forward) ;; tabbar.el, put all the buffers on the tabs.
 #+END_SRC
    
+** =crux=
+
+   =crux-open-with= is used to open files, that Emacs doesn't support, with external programs.
+
+#+begin_src emacs-lisp
+(global-set-key (kbd "C-c o") 'crux-open-with)
+#+end_src

@@ -70,7 +70,7 @@
  '(org-agenda-files (quote ("~/.emacs.d/todo.org")))
  '(package-selected-packages
    (quote
-    (py-autopep8 flycheck elpy gruvbox-theme magithub evil-magit magit cherry-blossom-theme ample-zen-theme ample-theme moe-theme soothe-theme afternoon-theme dracula-theme zenburn-theme cyberpunk-theme ujelly-theme material-theme leuven-theme s faceup racket-mode color-theme-solarized color-theme atom-one-dark-theme evil-tabs elscreen tabbar evil-collection sublimity minimap pretty-mode ## company-c-headers babel-repl company-irony irony ox-html5slide ox-twbs org-bullets solarized-theme markdown-mode+ evil airline-themes)))
+    (crux openwith pdf-tools py-autopep8 flycheck elpy gruvbox-theme magithub evil-magit magit cherry-blossom-theme ample-zen-theme ample-theme moe-theme soothe-theme afternoon-theme dracula-theme zenburn-theme cyberpunk-theme ujelly-theme material-theme leuven-theme s faceup racket-mode color-theme-solarized color-theme atom-one-dark-theme evil-tabs elscreen tabbar evil-collection sublimity minimap pretty-mode ## company-c-headers babel-repl company-irony irony ox-html5slide ox-twbs org-bullets solarized-theme markdown-mode+ evil airline-themes)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")

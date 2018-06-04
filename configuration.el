@@ -72,6 +72,12 @@
 
 (server-start)
 
+(require 'openwith)
+(openwith-mode t)
+(setq openwith-associations '(("\\.mkv\\'" "mpv" (file))))
+(setq openwith-associations '(("\\.mp4\\'" "mpv" (file))))
+(setq openwith-associations '(("\\.mp3\\'" "qmmp" (fil))))
+
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 
@@ -193,3 +199,5 @@ That is, a string used to represent it on the tab bar."
 (global-set-key (kbd "C-S-n") 'tabbar-forward-group)
 (global-set-key (kbd "C-<") 'tabbar-backward)
 (global-set-key (kbd "C->") 'tabbar-forward) ;; tabbar.el, put all the buffers on the tabs.
+
+(global-set-key (kbd "C-c o") 'crux-open-with)

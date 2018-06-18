@@ -77,3 +77,31 @@ git push -u origin timo
 git add Main.cpp 
 git commit -m "Test fin"
 git push -u origin timo
+cd ..
+cd Documents/projets/cpp/Mastermind/
+ls
+./Main 
+./Main 
+./Main 
+./Main 
+./Main
+./Main
+./Main
+./Main
+ls
+./Main
+./Main
+./Main
+./Main
+./Main
+./Main
+./Main
+./Main
+./Main
+./Main
+./Main
+./Main
+./Main
+./Main 
+./main
+./Main

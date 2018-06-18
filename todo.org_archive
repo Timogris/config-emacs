@@ -588,3 +588,62 @@ Archived entries from file /home/timo/.emacs.d/todo.org
    - State "DONE"       from "TODO"       [2018-06-04 lun. 14:24]
 ** DONE Messenger
    - State "DONE"       from "TODO"       [2018-06-04 lun. 14:24]
+
+* CANCELED regarder [[/home/timo/Vidéos/Keynote-NfngrdLv9ZQ.mp4][Keynote Python - Why is it awesome]] :perso:code:python:video:
+  SCHEDULED: <2018-05-31 jeu. 19:30>
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-06-05 mar. 09:19
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: CANCELED
+  :END:
+  
+
+  - State "CANCELED"   from "TODO"       [2018-06-05 mar. 09:19] \\
+    C'etait ennuyant et pas tres interessant. Aussi, le presentateur etait enervant.
+
+* DONE Configurer routeur                                     :perso:routeur:
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-06-13 mer. 10:26
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+  - State "DONE"       from "TODO"       [2018-06-13 mer. 10:25]
+[[https://www.assistance.bouyguestelecom.fr/internet-bbox/installation-bbox/installer-repeteur-wifi][Tuto WPS Bbox]]
+
+
+* CANCELED Voir pour un hackintosh                         :perso:hackintosh:
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-06-13 mer. 10:27
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: CANCELED
+  :END:
+
+
+  - State "CANCELED"   from "TODO"       [2018-06-13 mer. 10:26] \\
+    La flemme en vrai
+
+* CANCELED Lire manuel Pok3r
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-06-13 mer. 10:27
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: CANCELED
+  :END:
+  
+
+  - State "CANCELED"   from "TODO"       [2018-06-13 mer. 10:27] \\
+    La flemme aussi
+
+* DONE Partie piscine @ Max'                                   :perso:soiree:
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2018-06-18 lun. 09:15
+  :ARCHIVE_FILE: ~/.emacs.d/todo.org
+  :ARCHIVE_CATEGORY: todo
+  :ARCHIVE_TODO: DONE
+  :END:
+
+
+  - State "DONE"       from "TODO"       [2018-06-18 lun. 09:15]

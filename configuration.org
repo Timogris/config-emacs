@@ -50,14 +50,6 @@
 (powerline-default-theme)
 #+END_SRC
 
-* Notification flash
-
-   Sets a visual on-screen flash instead of a notification beep.
-   
-#+BEGIN_SRC emacs-lisp
-(setq visible-bell 1)
-#+END_SRC
-   
 * Basic Emacs modifications
   For a better Emacs experience.
 ** Enable =visual-line-mode=
@@ -81,26 +73,26 @@
    Displays a minimap on the right of the screen, /sublime-like/.
 
 #+BEGIN_SRC emacs-lisp
-(minimap-mode 1)
+;;(minimap-mode 1)
 
 ;; Move it to the right.
 
-(setq minimap-window-location 'right)
+;;(setq minimap-window-location 'right)
 
 ;; Make it work with HTML and Org.
 
-(add-to-list 'minimap-major-modes 'org-mode)
-(add-to-list 'minimap-major-modes 'html-mode)
+;;(add-to-list 'minimap-major-modes 'org-mode)
+;;(add-to-list 'minimap-major-modes 'html-mode)
 
 ;;Change background color from old, distracting red to new, refreshing D3D3D3
 
-(custom-set-faces
-  '(minimap-active-region-background
-    ((((background dark)) (:background "#2A2A2A222222"))
-      (t (:background "#D3D3D3222222")))
+;;(custom-set-faces
+;;  '(minimap-active-region-background
+;;    ((((background dark)) (:background "#2A2A2A222222"))
+;;      (t (:background "#D3D3D3222222")))
 ;;    "Face for the active region in the minimap.
 ;;By default, this is only a different background color."
-    :group 'minimap))
+;;    :group 'minimap))
 #+END_SRC
 
 ** Better window splitting
@@ -147,6 +139,22 @@
 (server-start)
 #+END_SRC
    
+** Notification flash
+
+   Sets a visual on-screen flash instead of a notification beep.
+   
+#+BEGIN_SRC emacs-lisp
+(setq visible-bell 1)
+#+END_SRC
+   
+** Enable =pdf-tools=
+
+   Better tool to view PDFs in Emacs (replaces DocView).
+
+#+begin_src emacs-lisp
+(pdf-tools-install)
+#+end_src
+
 * =org-mode= config
   
 ** =org-bullets=
@@ -201,6 +209,17 @@
 (setq org-src-fontify-natively t)
 #+END_SRC
    
+** Disable =linum-mode=
+
+   Not only is =linum-mode= ugly and not very useful with org-mode, it takes an irreasonnable amount of resources.
+
+#+begin_src emacs-lisp
+(defun nolinum ()
+  (global-linum-mode 0)
+)
+(add-hook 'org-mode-hook 'nolinum)
+#+end_src
+
 * Auto completion stuff
 
 ** =flycheck=
@@ -274,7 +293,7 @@
 
 * =tabbar-mode=
 
-  Tabs in Emacs, with Atom One Dark colors, but works for Dracula, too.
+  Tabs in Emacs, with Dracula colors.
 
 #+BEGIN_SRC emacs-lisp
 
@@ -283,9 +302,9 @@
 ;; Tabbar settings
 (set-face-attribute
  'tabbar-default nil
- :background "#282c34"
- :foreground "#282c34"
- :box '(:line-width 1 :color "#282c34" :style nil))
+ :background "#282a35"
+ :foreground "#282a35"
+ :box '(:line-width 1 :color "#282a35" :style nil))
 (set-face-attribute
  'tabbar-unselected nil
  :background "#5c6370"
@@ -293,21 +312,21 @@
  :box '(:line-width 5 :color "#5c6370" :style nil))
 (set-face-attribute
  'tabbar-selected nil
- :background "#282c34"
+ :background "#282a35"
  :foreground "#abb2bf"
- :box '(:line-width 5 :color "#282c34" :style nil))
+ :box '(:line-width 5 :color "#282a35" :style nil))
 (set-face-attribute
  'tabbar-highlight nil
  :background "#abb2bf"
- :foreground "#282c34"
+ :foreground "#282a35"
  :underline nil
  :box '(:line-width 5 :color "#abb2bf" :style nil))
 (set-face-attribute
  'tabbar-button nil
- :box '(:line-width 1 :color "#282c34" :style nil))
+ :box '(:line-width 1 :color "#282a35" :style nil))
 (set-face-attribute
  'tabbar-separator nil
- :background "#282c34"
+ :background "#282a35"
  :height 0.6)
 (set-face-attribute
  'tabbar-modified nil
@@ -317,10 +336,10 @@
  :box '(:line-width 5 :color "#5c6370" :style nil))
 (set-face-attribute
  'tabbar-selected-modified nil
- :background "#282c34"
+ :background "#282a35"
  :foreground "#e06c75"
  :underline nil
- :box '(:line-width 5 :color "#282c34" :style nil))
+ :box '(:line-width 5 :color "#282a35" :style nil))
 
 ;; Changes padding of the tabs
 ;; we also need to set separators to avoid overlapping tabs by highlighted tabs

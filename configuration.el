@@ -19,32 +19,30 @@
 
 (powerline-default-theme)
 
-(setq visible-bell 1)
-
 (global-visual-line-mode 1)
 
 (global-linum-mode t)
 
-(minimap-mode 1)
+;;(minimap-mode 1)
 
 ;; Move it to the right.
 
-(setq minimap-window-location 'right)
+;;(setq minimap-window-location 'right)
 
 ;; Make it work with HTML and Org.
 
-(add-to-list 'minimap-major-modes 'org-mode)
-(add-to-list 'minimap-major-modes 'html-mode)
+;;(add-to-list 'minimap-major-modes 'org-mode)
+;;(add-to-list 'minimap-major-modes 'html-mode)
 
 ;;Change background color from old, distracting red to new, refreshing D3D3D3
 
-(custom-set-faces
-  '(minimap-active-region-background
-    ((((background dark)) (:background "#2A2A2A222222"))
-      (t (:background "#D3D3D3222222")))
+;;(custom-set-faces
+;;  '(minimap-active-region-background
+;;    ((((background dark)) (:background "#2A2A2A222222"))
+;;      (t (:background "#D3D3D3222222")))
 ;;    "Face for the active region in the minimap.
 ;;By default, this is only a different background color."
-    :group 'minimap))
+;;    :group 'minimap))
 
 (defun vsplit-last-buffer ()
   (interactive)
@@ -72,11 +70,9 @@
 
 (server-start)
 
-(require 'openwith)
-(openwith-mode t)
-(setq openwith-associations '(("\\.mkv\\'" "mpv" (file))))
-(setq openwith-associations '(("\\.mp4\\'" "mpv" (file))))
-(setq openwith-associations '(("\\.mp3\\'" "qmmp" (fil))))
+(setq visible-bell 1)
+
+(pdf-tools-install)
 
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
@@ -97,6 +93,11 @@
   '((sequence "TODO(t)" "RDV(r)" "WAIT(w@/!)" "|" "DONE(d!)" "CANCELED(c@)")))
 
 (setq org-src-fontify-natively t)
+
+(defun nolinum ()
+  (global-linum-mode 0)
+)
+(add-hook 'org-mode-hook 'nolinum)
 
 ;; always enabled
 (global-flycheck-mode)
@@ -128,9 +129,9 @@
 ;; Tabbar settings
 (set-face-attribute
  'tabbar-default nil
- :background "#282c34"
- :foreground "#282c34"
- :box '(:line-width 1 :color "#282c34" :style nil))
+ :background "#282a35"
+ :foreground "#282a35"
+ :box '(:line-width 1 :color "#282a35" :style nil))
 (set-face-attribute
  'tabbar-unselected nil
  :background "#5c6370"
@@ -138,21 +139,21 @@
  :box '(:line-width 5 :color "#5c6370" :style nil))
 (set-face-attribute
  'tabbar-selected nil
- :background "#282c34"
+ :background "#282a35"
  :foreground "#abb2bf"
- :box '(:line-width 5 :color "#282c34" :style nil))
+ :box '(:line-width 5 :color "#282a35" :style nil))
 (set-face-attribute
  'tabbar-highlight nil
  :background "#abb2bf"
- :foreground "#282c34"
+ :foreground "#282a35"
  :underline nil
  :box '(:line-width 5 :color "#abb2bf" :style nil))
 (set-face-attribute
  'tabbar-button nil
- :box '(:line-width 1 :color "#282c34" :style nil))
+ :box '(:line-width 1 :color "#282a35" :style nil))
 (set-face-attribute
  'tabbar-separator nil
- :background "#282c34"
+ :background "#282a35"
  :height 0.6)
 (set-face-attribute
  'tabbar-modified nil
@@ -162,10 +163,10 @@
  :box '(:line-width 5 :color "#5c6370" :style nil))
 (set-face-attribute
  'tabbar-selected-modified nil
- :background "#282c34"
+ :background "#282a35"
  :foreground "#e06c75"
  :underline nil
- :box '(:line-width 5 :color "#282c34" :style nil))
+ :box '(:line-width 5 :color "#282a35" :style nil))
 
 ;; Changes padding of the tabs
 ;; we also need to set separators to avoid overlapping tabs by highlighted tabs

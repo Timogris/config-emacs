@@ -70,7 +70,10 @@
  '(org-agenda-files (quote ("~/.emacs.d/todo.org")))
  '(package-selected-packages
    (quote
-    (crux openwith pdf-tools py-autopep8 flycheck elpy gruvbox-theme magithub evil-magit magit cherry-blossom-theme ample-zen-theme ample-theme moe-theme soothe-theme afternoon-theme dracula-theme zenburn-theme cyberpunk-theme ujelly-theme material-theme leuven-theme s faceup racket-mode color-theme-solarized color-theme atom-one-dark-theme evil-tabs elscreen tabbar evil-collection sublimity minimap pretty-mode ## company-c-headers babel-repl company-irony irony ox-html5slide ox-twbs org-bullets solarized-theme markdown-mode+ evil airline-themes)))
+    (pdf-tools crux openwith py-autopep8 flycheck elpy gruvbox-theme magithub evil-magit magit cherry-blossom-theme ample-zen-theme ample-theme moe-theme soothe-theme afternoon-theme dracula-theme zenburn-theme cyberpunk-theme ujelly-theme material-theme leuven-theme s faceup racket-mode color-theme-solarized color-theme atom-one-dark-theme evil-tabs elscreen tabbar evil-collection sublimity minimap pretty-mode ## company-c-headers babel-repl company-irony irony ox-html5slide ox-twbs org-bullets solarized-theme markdown-mode+ evil airline-themes)))
+ '(pdf-view-incompatible-modes
+   (quote
+    (linum-relative-mode helm-linum-relative-mode nlinum-mode nlinum-hl-mode nlinum-relative-mode yalinum-mode)))
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(pos-tip-background-color "#073642")
  '(pos-tip-foreground-color "#93a1a1")
@@ -117,7 +120,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Inconsolata" :foundry "CYRE" :slant normal :weight normal :height 112 :width normal))))
+ '(default ((t (:family "IBM Plex Mono" :foundry "IBM " :slant normal :weight semi-bold :height 98 :width normal))))
  '(minimap-active-region-background ((((background dark)) (:background "#2A2A2A222222")) (t (:background "#D3D3D3222222"))) nil (quote minimap))
  '(org-level-1 ((t (:inherit default))))
  '(org-level-2 ((t (:inherit default))))
